@@ -2,17 +2,24 @@
 
 Reimplementação Java/Spring Boot da [API de referência](https://github.com/LiniiS/connectivity-forecast-api), usada como artefato educacional de APS II.
 
-## Executar
+## Executar a aplicação
 
-Requisitos: Java 17 e Maven 3.9+.
+### Requisitos
 
-```bash
+- Java 17
+- Maven 3.9 ou superior
+
+Passos
+
+1. Execute os testes para verificar o funcionamento do projeto:
 mvn test
+2. Inicie a aplicação:
 mvn spring-boot:run
-```
+3. Acesse a documentação da API no navegador:
+Swagger UI: http://localhost:8080/swagger-ui.html
+OpenAPI: http://localhost:8080/v3/api-docs
 
-Swagger UI: `http://localhost:8080/swagger-ui.html`  
-OpenAPI: `http://localhost:8080/v3/api-docs`
+A aplicação será executada localmente na porta 8080.
 
 ## Escopo
 
@@ -20,7 +27,7 @@ API local com catálogo de modelos e previsões mockadas. Fixture igual à refer
 
 ## Estrutura
 
-Separação em controllers, services, repositories, modelos de domínio/DTOs e configuração. API versionada em `/api/v1`, com recursos de health, modelos, localizações, previsões e atividades.
+Separação em controllers, services, repositories, modelos de domínio/DTOs e configuração. API versionada em /api/v1, com recursos de health, modelos, localizações, previsões e atividades.
 
 ## Documentação
 
